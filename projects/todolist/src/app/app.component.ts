@@ -5,17 +5,8 @@ import { TODOS } from './mock-todo';
   selector: 'app-root',
   template: `
     <h1>Hello world!!</h1>
-    <ul>
-      <li>{{ todoList[0].title }}</li>
-      <li>{{ todoList[1].title }}</li>
-      <li>{{ todoList[2].title }}</li>
-      <li>{{ todoList[3].title }}</li>
-      <li>{{ todoList[4].title }}</li>
-      <li>{{ todoList[5].title }}</li>
-      <li>{{ todoList[6].title }}</li>
-      <li>{{ todoList[7].title }}</li>
-      <li>{{ todoList[8].title }}</li>
-      <li>{{ todoList[9].title }}</li>*
+    <ul *ngFor="let todo of todoList">
+      <li *ngIf="todo.isCompleted == true">{{ todo.title }}</li>
     </ul>
   `,
   styleUrls: []

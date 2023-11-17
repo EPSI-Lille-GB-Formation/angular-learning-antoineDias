@@ -51,7 +51,7 @@ export const TODOS: Todo [] = [
         title: "Todo 6",
         content: "content todo 6",
         author: "John Six",
-        isCompleted: false,
+        isCompleted: true,
         createdAt: new Date(),
         completedAt: null
     },
@@ -78,7 +78,7 @@ export const TODOS: Todo [] = [
         title: "Todo 9",
         content: "content todo 9",
         author: "John Neuf",
-        isCompleted: false,
+        isCompleted: true,
         createdAt: new Date(),
         completedAt: null
     },
